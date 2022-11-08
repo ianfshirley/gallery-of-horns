@@ -15,9 +15,9 @@ Actual time needed to complete: ~40min
 
 ### Lab 2 - Feature #2: Allow users to vote for their favorite beast
 
-Estimate of time needed to complete: 
+Estimate of time needed to complete: 1.5hrs
 
-Start time: 
+Start time: 3pm
 
 Finish time: _____
 
