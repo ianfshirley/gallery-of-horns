@@ -1,27 +1,25 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
-// import trolloc from './trolloc.jpeg';
+import data from './data.json';
 
 
 class Main extends React.Component {
   render() {
+
+    let beastArray = [];
+    data.forEach((beast) => {
+      beastArray.push(<HornedBeast
+        _id={beast.name}
+        image_url={beast.image_url}
+        title={beast.title}
+        description={beast.description}
+        keyword={beast.keyword}
+        horns={beast.horns}
+      />)
+    })
     return (
       <main>
-        <HornedBeast 
-          title='Trolloc'
-          src="https://i.ibb.co/YTR1M4V/trolloc.jpg"
-          // src={trolloc}
-          alt='Trolloc'
-          imgTitle='Trolloc'
-          description='Shadowspawn, a horrifying cross of human and animal. Predators who delight in killing. Avoid at all costs.'
-        />
-        <HornedBeast
-          title='Unicorn'
-          src="https://i.ibb.co/ssw3VNt/unicorn.jpg"
-          alt="Unicorn"
-          imgTitle='Unicorn'
-          description='Majestic creature with magical abilities. Extremely rare.'
-        />
+        {beastArray}
       </main>
     )
   }
