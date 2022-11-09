@@ -29,6 +29,10 @@ Estimate of time needed to complete: 1hr
 
 Start time: 4pm
 
+Paused for acupuncture appointment: 4:45pm
+
+Resumed: 
+
 Finish time: _____
 
 Actual time needed to complete: _____
