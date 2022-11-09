@@ -18,6 +18,8 @@ class Main extends React.Component {
         keyword={beast.keyword}
         horns={beast.horns}
         key={idx}
+        addHearts={this.props.addHearts}
+        handleOpenModal={this.props.handleOpenModal}
       />)
     })
     return (
