@@ -9,15 +9,15 @@ Estimate of time needed to complete: 1hr
 
 Start time: 2:15pm
 
-Finish time: 2:53
+Finish time: 2:53pm
 
-Actual time needed to complete: ~40min
+Actual time needed to complete: 38min
 
 ### Lab 2 - Feature #2: Allow users to vote for their favorite beast
 
-Estimate of time needed to complete: 1.5hrs
+Estimate of time needed to complete: 1hr 30min
 
-Start time: 3pm
+Start time: 3:00pm
 
 Finish time: 3:30pm
 
@@ -27,12 +27,12 @@ Actual time needed to complete: 30min
 
 Estimate of time needed to complete: 1hr
 
-Start time: 4pm
+Start time: 4:00pm
 
 Paused for acupuncture appointment: 4:45pm
 
-Resumed: 7pm
+Resumed: 7:00pm
 
-Finish time: _____
+Finish time: 7:45pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 1hr 30min
