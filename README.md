@@ -25,9 +25,9 @@ Actual time needed to complete: 30min
 
 ### Lab 2 - Feature #3: Bootstrap
 
-Estimate of time needed to complete: 
+Estimate of time needed to complete: 1hr
 
-Start time: 
+Start time: 4pm
 
 Finish time: _____
 
