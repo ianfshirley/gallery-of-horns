@@ -9,6 +9,21 @@ class Main extends React.Component {
   render() {
 
     let beastArray = [];
+
+    // data.map((beast, idx) => {
+    //   (<HornedBeast
+    //     _id={beast.name}
+    //     image_url={beast.image_url}
+    //     title={beast.title}
+    //     description={beast.description}
+    //     keyword={beast.keyword}
+    //     horns={beast.horns}
+    //     key={idx}
+    //     addHearts={this.props.addHearts}
+    //     handleOpenModal={this.props.handleOpenModal}
+    //   />)
+    // })
+
     data.forEach((beast, idx) => {
       beastArray.push(<HornedBeast
         _id={beast.name}
@@ -22,6 +37,7 @@ class Main extends React.Component {
         handleOpenModal={this.props.handleOpenModal}
       />)
     })
+    
     return (
       <main>
         <Container>

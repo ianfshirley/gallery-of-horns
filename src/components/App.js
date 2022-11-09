@@ -4,6 +4,7 @@ import Main from './Main.js';
 import Footer from './Footer.js';
 import './App.css';
 import Modal from 'react-bootstrap/Modal';
+import SelectedBeast from './SelectedBeast';
 
 
 class App extends React.Component {
@@ -11,7 +12,8 @@ class App extends React.Component {
     super(props);
     this.state = {
       hearts: '',
-      isModalShown: false
+      isModalShown: false,
+      selectedBeast: {}
     }
   }
 
@@ -45,15 +47,12 @@ class App extends React.Component {
           handleOpenModal={this.handleOpenModal}
         />
         <Footer />
-        <Modal
+        <SelectedBeast
           show={this.state.isModalShown}
           onHide={this.handleCloseModal}
+          selectedBeast={this.state.selectedBeast}
         >
-          <Modal.Header closeButton>
-            <Modal.Title>Modal</Modal.Title>
-          </Modal.Header>
-          sup
-        </Modal>
+        </SelectedBeast>
       </div>
     );
   }
