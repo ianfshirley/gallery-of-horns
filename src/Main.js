@@ -1,6 +1,8 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
 import data from './data.json';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 
 class Main extends React.Component {
@@ -20,7 +22,11 @@ class Main extends React.Component {
     })
     return (
       <main>
-        {beastArray}
+        <Container>
+          <Row>
+            {beastArray}
+          </Row>
+        </Container>
       </main>
     )
   }

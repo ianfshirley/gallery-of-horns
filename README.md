@@ -31,7 +31,7 @@ Start time: 4pm
 
 Paused for acupuncture appointment: 4:45pm
 
-Resumed: 
+Resumed: 7pm
 
 Finish time: _____
 
