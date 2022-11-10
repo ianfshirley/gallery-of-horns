@@ -12,10 +12,9 @@ class App extends React.Component {
     super(props);
     this.state = {
       isModalShown: false,
-      
-      selectedTitle: '',
-      selectedImageUrl: '',
-      selectedDescription: ''
+      title: '',
+      image_url: '',
+      description: ''
     }
   }
 
@@ -25,12 +24,13 @@ class App extends React.Component {
     })
   }
 
-  handleOpenModal = (title, URL, desc) => {
+  handleOpenModal = (title, src, description, alt) => {
     this.setState({
       isModalShown: true,
-      selectedTitle: title,
-      selectedImageUrl: URL,
-      selectedDescription: desc,
+      title: title,
+      image_url: src,
+      description: description,
+      alt: alt
     })
   }
 
@@ -47,10 +47,9 @@ class App extends React.Component {
         <SelectedBeast
           isModalShown={this.state.isModalShown}
           onHide={this.handleCloseModal}
-          // selectedBeast={this.state.selectedBeast}
-          title={this.state.selectedTitle}
-          imageUrl={this.state.selectedImageUrl}
-          description={this.state.selectedDescription}
+          title={this.state.title}
+          image_url={this.state.image_url}
+          description={this.state.description}
         >
         </SelectedBeast>
       </div>

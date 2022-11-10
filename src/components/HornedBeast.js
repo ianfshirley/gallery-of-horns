@@ -18,13 +18,12 @@ class HornedBeast extends React.Component {
     });
   }
 
-
   render() {
     return (
       <Col>
         <Card style={{ width: '18rem' }}>
           <Card.Img
-            onClick={() => this.props.handleOpenModal(this.props.title, this.props.imageUrl, this.props.description)}
+            onClick={() => this.props.handleOpenModal(this.props.title, this.props.image_url, this.props.description)}
             src={this.props.image_url}
             alt={this.props.title}
             title={this.props.title}
