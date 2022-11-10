@@ -17,7 +17,7 @@ class SelectedBeast extends React.Component {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <img src={this.props.image_url} alt={this.props.title}/>
+        <img className='modalImg' src={this.props.image_url} alt={this.props.title}/>
         <p>{this.props.description}</p>
       </Modal.Body>
     </Modal>

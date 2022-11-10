@@ -28,7 +28,7 @@ class HornedBeast extends React.Component {
             alt={this.props.title}
             title={this.props.title}
           />
-          <Card.Body>
+          <Card.Body className='cardBody'>
             <Card.Title>{this.props.title}</Card.Title>
               <Card.Text>
               <p>

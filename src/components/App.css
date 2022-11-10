@@ -21,3 +21,10 @@ header {
   flex-wrap: wrap;
   justify-content: space-evenly;
 } */
+
+.modalImg {
+  max-width: 400px;
+}
+
+
+
