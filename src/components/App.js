@@ -3,24 +3,20 @@ import Header from './Header';
 import Main from './Main.js';
 import Footer from './Footer.js';
 import './App.css';
-import Modal from 'react-bootstrap/Modal';
 import SelectedBeast from './SelectedBeast';
+import data from '../data.json';
 
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      hearts: '',
       isModalShown: false,
-      selectedBeast: {}
+      
+      selectedTitle: '',
+      selectedImageUrl: '',
+      selectedDescription: ''
     }
-  }
-
-  addHearts = () => {
-    this.setState({
-      hearts: this.state.hearts + '❤️'
-    })
   }
 
   handleCloseModal = () => {
@@ -29,28 +25,32 @@ class App extends React.Component {
     })
   }
 
-  handleOpenModal = () => {
+  handleOpenModal = (title, URL, desc) => {
     this.setState({
-      isModalShown: true
+      isModalShown: true,
+      selectedTitle: title,
+      selectedImageUrl: URL,
+      selectedDescription: desc,
     })
   }
 
   render() {
     return (
       <div>
-        <Header
-          hearts={this.state.hearts}
-        />
-        <p onClick={this.handleOpenModal}>Open Modal</p>
+        <p>{this.state.isModalShown}</p>
+        <Header />
         <Main
-          addHearts={this.addHearts}
+          data={data}
           handleOpenModal={this.handleOpenModal}
         />
         <Footer />
         <SelectedBeast
-          show={this.state.isModalShown}
+          isModalShown={this.state.isModalShown}
           onHide={this.handleCloseModal}
-          selectedBeast={this.state.selectedBeast}
+          // selectedBeast={this.state.selectedBeast}
+          title={this.state.selectedTitle}
+          imageUrl={this.state.selectedImageUrl}
+          description={this.state.selectedDescription}
         >
         </SelectedBeast>
       </div>
