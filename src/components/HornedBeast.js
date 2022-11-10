@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
+// import Image from 'react-bootstrap/Image';
 
 
 class HornedBeast extends React.Component {
@@ -21,18 +22,23 @@ class HornedBeast extends React.Component {
     return (
       <Col>
         <Card style={{ width: '18rem' }}>
-          <Card.Img src={this.props.image_url} alt={this.props.title} title={this.props.title} />
+          <Card.Img
+            onClick={() => this.props.handleOpenModal(this.props.title, this.props.image_url, this.props.description)}
+            src={this.props.image_url}
+            alt={this.props.title}
+            title={this.props.title}
+          />
           <Card.Body>
             <Card.Title>{this.props.title}</Card.Title>
-            <Card.Text>
+              <Card.Text>
               <p>
-                <button onClick={this.handleClick}>
+                <button onClick={() => this.handleClick()}>
                   ❤️
                 </button>
                 Favorited: {this.state.favorites}
               </p>
               <p>{this.props.description}</p>
-            </Card.Text>
+              </Card.Text>
           </Card.Body>
         </Card>
       </Col>
