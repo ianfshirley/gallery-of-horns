@@ -47,3 +47,5 @@ Start time: 2:00pm
 Finish time: 10:00pm
 
 Actual time needed to complete: 7hr (took one hour break for dinner 7:30-8:30)
+
+#### Thanks to Jason Christopher, Brenda Jow & TA Kjell for helping me today. Would not have been able to complete the lab without them.
