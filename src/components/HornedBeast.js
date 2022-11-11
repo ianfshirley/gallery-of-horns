@@ -38,6 +38,7 @@ class HornedBeast extends React.Component {
                 Favorited: {this.state.favorites}
               </p>
               <p>{this.props.description}</p>
+              <p>Number of horns: {this.props.horns}</p>
               </Card.Text>
           </Card.Body>
         </Card>
