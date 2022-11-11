@@ -49,3 +49,13 @@ Finish time: 10:00pm
 Actual time needed to complete: 7hr (took one hour break for dinner 7:30-8:30)
 
 #### Thanks to Jason Christopher, Brenda Jow & TA Kjell for helping me today. Would not have been able to complete the lab without them.
+
+### Lab 4 - Feature #1: Filter by Number of Horns
+
+Estimate of time needed to complete: 6hr
+
+Start time: 2:30pm
+
+Finish time: 8:30pm
+
+Actual time needed to complete: 6hr (although I started over 3 times between 2:30 & 5pm and took my dog for a walk, so maybe more like 3-4 hours of actual working time)
