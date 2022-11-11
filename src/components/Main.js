@@ -39,10 +39,10 @@ class Main extends React.Component {
       <main>
         <Form>
           <Form.Group>
-            <Form.Label>
+            <Form.Label htmlFor='selector'>
               Filter Beasts by Number of Horns
             </Form.Label>
-            <Form.Select onChange={this.handleSelect}>
+            <Form.Select id='selector' onChange={this.handleSelect}>
               <option>All</option>
               <option value='one'>1</option>
               <option value='two'>2</option>
