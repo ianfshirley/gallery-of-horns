@@ -23,6 +23,13 @@ class Main extends React.Component {
             <Form.Label>
               Filter Beasts by Number of Horns
             </Form.Label>
+            <Form.Select>
+              <option>All</option>
+              <option value='one'>1</option>
+              <option value='two'>2</option>
+              <option value='three'>3</option>
+              <option value='hundred'>100</option>
+            </Form.Select>
           </Form.Group>
         </Form>
         <Container>
